@@ -1,0 +1,156 @@
+site_name: Rajadurai Tutorials
+site_author: Rajadurai M
+site_description: >-
+  Making DevOps accessible and easy to understand
+
+# Repository
+# repo_name: tutorial-documentation
+# repo_url: https://github.com/rajaduraicloud/tutorial-documentation.git
+
+theme:
+  name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+  # Plugins
+  plugins:
+    - search:
+        separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+    - minify:
+        minify_html: true
+    - mkdocs-video:
+    - git-revision-date-localized:
+        enable_creation_date: true
+
+  palette:
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - content.tooltips
+    # - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    #- navigation.expand
+    # - navigation.path
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+
+  language: en
+
+# extra:
+#   version:
+#     provider: mike
+#     default: latest
+#   annotate:
+#     json: [.s2]
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/rajaduraicloud
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/rajaduraicloud
+
+  generator: false
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+copyright: |
+  Copyright &copy; 2023 Rajadurai M</a>
+
+nav:
+  - Home: index.md
+  - Tutorials:
+    - Jenkins:
+        - Install Jenkins: Kubernetes/install-jenkins.md
+        - Install Nginx Reverse Proxy for Jenkins: Kubernetes/install-nginx.md
+        - Configure Jenkins with TLS: Kubernetes/jenkins-ssl.md
+        - Adding an SSH Based Agent with Docker to Jenkins: Kubernetes/jenkins-ssh-agent.md
+        - Install Jenkins on Kubernetes: Kubernetes/jenkins-in-kubernetes.md
+    - ArgoCD:
+        - Install ArgoCD: Kubernetes/install-argocd.md
+        - ArgoCD Git Webhook: Kubernetes/argocd-webhook.md
+    - Kubernetes:
+        - RKE2 Kubernetes HA with Kube-VIP: Kubernetes/ha-kubernetes-cluster-with-rke2.md
+        - k3s HA Kubernetes with k3sup: Kubernetes/k3sup-ha.md
+        - Kubernetes Secrets: Kubernetes/howto-use-kubernetes-secrets.md
+        - TLS Certifcates on Kubernetes & Cloudflare: Kubernetes/kubernetes-certifcates-traefik.md
+    - Rancher:
+        - Install Rancher Manager With Lets Encrypt: Kubernetes/rancher-manager-with-lets-encrypt.md
+    - Install Sonarqube: Kubernetes/install-sonarqube.md
+    - Install Gitlab CE k8s: Kubernetes/install-gitlab-ce-k8s.md
+    - Install Nexus3 Repository Manager with TLS: Kubernetes/nexus3-with-tls.md
+    - TrueNAS (Core):
+        - TrueNAS Core Configure TLS: Kubernetes/truenas-core-tls.md
+  - Linux:
+    - Java Installation:
+        - Install: Linux/Install-Uninstall openJDK in ubuntu.md
