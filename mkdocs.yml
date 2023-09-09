@@ -50,7 +50,7 @@ theme:
     - navigation.indexes
     - navigation.tracking
     #- navigation.expand
-    # - navigation.path
+    - navigation.path
     - toc.follow
     - search.suggest
     - search.highlight
@@ -61,12 +61,12 @@ theme:
 
   language: en
 
-# extra:
-#   version:
-#     provider: mike
-#     default: latest
-#   annotate:
-#     json: [.s2]
+extra:
+  # version:
+  #   provider: mike
+  #   default: latest
+  # annotate:
+  #   json: [.s2]
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/rajaduraicloud
