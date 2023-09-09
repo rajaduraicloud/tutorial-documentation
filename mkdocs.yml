@@ -154,3 +154,4 @@ nav:
   - Linux:
     - Java Installation:
         - Install: Linux/Install-Uninstall openJDK in ubuntu.md
+        - test: Linux/test.md
