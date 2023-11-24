@@ -152,6 +152,4 @@ nav:
     - TrueNAS (Core):
         - TrueNAS Core Configure TLS: Kubernetes/truenas-core-tls.md
   - Linux:
-    - Java Installation:
-        - Install: Linux/Install-Uninstall openJDK in ubuntu.md
-        - test: Linux/test.md
+    - Java Installation: Linux/Install-Uninstall openJDK in ubuntu.md
