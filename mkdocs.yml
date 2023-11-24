@@ -129,7 +129,7 @@ copyright: |
 
 nav:
   - Home: index.md
-  - Tutorials:
+  - K8s CI-CD:
     - Jenkins:
         - Install Jenkins: Kubernetes/install-jenkins.md
         - Install Nginx Reverse Proxy for Jenkins: Kubernetes/install-nginx.md
